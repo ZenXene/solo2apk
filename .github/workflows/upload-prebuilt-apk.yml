@@ -1,0 +1,35 @@
+name: Upload Pre-built APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Create APK directory
+      run: mkdir -p android/app/build/outputs/apk/debug
+    
+    - name: Download pre-built APK
+      run: |
+        # Use curl to download a placeholder APK (we'll replace this with the actual one)
+        curl -o android/app/build/outputs/apk/debug/app-debug.apk https://github.com/ZenXene/solo2apk/releases/download/v1.0.0/app-debug.apk || true
+    
+    - name: Check APK file
+      run: |
+        ls -la android/app/build/outputs/apk/debug/
+        if [ ! -f "android/app/build/outputs/apk/debug/app-debug.apk" ]; then
+          echo "APK file not found!"
+          exit 1
+        fi
+    
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: app-debug
+        path: android/app/build/outputs/apk/debug/app-debug.apk
