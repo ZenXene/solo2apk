@@ -1,0 +1,12 @@
+{
+  "appId": "com.trae.solo",
+  "appName": "TRAE SOLO",
+  "webDir": "dist",
+  "server": {
+    "url": "https://solo.trae.cn/",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
