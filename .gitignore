@@ -5,3 +5,4 @@ build/
 *.aab
 .DS_Store
 .env
+_inbox/
