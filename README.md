@@ -22,7 +22,7 @@
 
 ### 直接下载 APK
 
-1. **下载 APK**：从项目根目录下载 `solo-app.apk` 文件
+1. **下载 APK**：从项目根目录下载 `solo.apk` 文件
 2. **安装到设备**：
    - 启用 Android 设备的 "未知来源" 安装选项（设置 → 安全 → 未知来源）
    - 将 APK 文件传输到设备（可通过 USB、蓝牙或云存储）
@@ -70,7 +70,7 @@ solo2apk/
 ├── capacitor.config.json  # Capacitor 配置文件
 ├── package.json       # 项目依赖和配置
 ├── README.md          # 项目说明文档
-└── solo-app.apk       # 预构建的 APK 文件
+└── solo.apk       # 预构建的 APK 文件
 ```
 
 ## 构建说明
@@ -139,7 +139,7 @@ This is an Android app built with Capacitor for accessing the TRAE SOLO website 
 
 ### Direct APK Download
 
-1. **Download APK**：Download `solo-app.apk` from the project root directory
+1. **Download APK**：Download `solo.apk` from the project root directory
 2. **Install to device**：
    - Enable "Unknown sources" installation option on your Android device (Settings → Security → Unknown sources)
    - Transfer the APK file to your device (via USB, Bluetooth, or cloud storage)
@@ -187,7 +187,7 @@ solo2apk/
 ├── capacitor.config.json  # Capacitor configuration file
 ├── package.json       # Project dependencies and configuration
 ├── README.md          # Project documentation
-└── solo-app.apk       # Pre-built APK file
+└── solo.apk       # Pre-built APK file
 ```
 
 ## Build Instructions
